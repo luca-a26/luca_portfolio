@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/luca.jpeg" />
+     <title>Luca Armezzani GIS Portfolio</title>
+    <meta name="description" content="Luca Armezzani GIS Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">PORTFOLIO</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:luca.armezzani16@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">MASTERS RESEARCH PROJECT</div>
+        <div class="body-text">Considering the UK’s
+exceptionally high tidal resource, tidal power harnessed via tidal stream technology may be
+a useful asset in achieving the net-zero goal.</div>
+        <image class="project-header-image" src="../assets/images/ar1500.jpg">
+	<span class="image-caption" style="font-size: 12px;">The AR1500 tidal turbine. This project investigated the feasibility of this turbine in the Bristol Channel. </span>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">ABSTRACT</div>
+        <div class="project-details-content">
+          <div class="body-text">This study examines potential sites in the Bristol Channel and Severn Estuary where tidal stream turbine arrays are best suited. For real-world practicality, this study assumes the
+technology used would be a SIMEC-Atlantis AR1500 turbine. It uses a Multi-criteria-decisionmaking (MCDM) analysis via ArcGIS and introduces a number of constraints which are
+grouped into Ecological, Physical, and Socio-economic categories, each prioritised over
+three different analyses using an Analytical Hierarchy Process (AHP). Overlapping sites are
+then investigated for their potential power output to determine the most efficient site in
+the study area for turbine placement. It finds that the area most suited to this technology is
+a 2 km2 area located to the North of Exmoor national park. With a potential maximum
+power output of over 0.75 MW per turbine, an extensive turbine array in this location would
+ensure that a substantial amount of power could be supplied to either the grid or local
+settlements. </div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+            <div class="gallery-image-container">
+              <img src="../assets/images/mrpscenarios_page-0001.jpg" class="gallery-image">
+              <span class="image-caption" style="font-size: 12px;">Each of the three scenarios returned a range of potential sites which were spread across the extent of the study site, but mostly concentrated towards the Western portion. Due to the fact that the entirety of the Severn Estuary is designated as a Special Area of Conservation, the analysis was unable to return any sites within this area. Additionally, only a very small area within the Western part of the Estuary met the depth constraints, meaning that the
+number of sites in this area would have been limited, and the presence of an ecologically protected area in this region did not significantly impact the availability of potential sites for the entire study area. Furthermore, Western areas of the Bristol Channel included SAC’s and SPA’s, so these automatically did not make the final selection due to the MCDM process
+prioritising areas where the most constraints were satisfied. A large collection of sites sits in an area up to 11 km North of the coastline from Ilfracombe, stretching East and West across the extent of Exmoor (Fig. 1). Other sites include an area to the Northwest in the centre of the channel, an area roughly 20 km West of Northam, and area further North towards the coast, near the Welsh town of Barry. </span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/mrpfinalsites.jpg" class="gallery-image">
+              <span class="image-caption" style="font-size: 12px;">The sensitivity analysis, in which the sites from all three scenarios were overlayed and the sites shared by all three remained, revealed a final output (Fig. 2). It shows the thin, longitudinal strip to the north of Exmoor, with several fragmented clusters in close proximity. To ensure the sites shown were practically suitable for the placement of a tidal turbine array, further processing to remove sites with an area smaller than 0.5 km2 was conducted by creating a new layer from a selection. </span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/mrpresults_page-0001.jpg" class="gallery-image">
+              <span class="image-caption" style="font-size: 12px;">The power output was calculated for the peak maximum and average tidal velocity, and mean maximum and average velocity. The figure in the Eastern portion surpasses the West for both mean and maximum outputs in every single category. The mean values of maximum and average velocity were included in this analysis to provide a basis of knowledge for how an array of turbines would generate power in the entirety of either site. This was due to the areas where peak values for maximum and average velocity were identified taking up a very small portion of each site.</span>
+
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+<div id="footer">
+  <!-- Email Icon -->
+  <a class="icon-link" href="mailto:luca.armezzani16@gmail.com">
+    <img src="../assets/icons/mail.svg" class="footer-icon"/>
+  </a>
+
+  <!-- Phone Icon -->
+  <a class="icon-link" href="tel:+447585440250">
+    <img src="../assets/icons/phone.svg" class="footer-icon"/>
+  </a>
+</div>
+
+</html>

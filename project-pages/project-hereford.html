@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/luca.jpeg" />
+     <title>Luca Armezzani GIS Portfolio</title>
+    <meta name="description" content="Luca Armezzani GIS Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">PORTFOLIO</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:luca.armezzani16@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">BUILDING NEAR FLOOD ZONES</div>
+        <div class="body-text">This project investigated how to develop land close to the town centre which was prone to flooding.</div>
+        <image class="project-header-image" src="../assets/images/Water_Responsive_Fluvial_Flooding.jpg">
+	<span class="image-caption" style="font-size: 12px;">Map highlighting the Environment Agency Flood Zones relative to the position of the council's sites.</span>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">PROJECT DETAILS</div>
+        <div class="project-details-content">
+          <div class="body-text">This local council wanted to investigate the viability of developing on land which sat in or near areas designated as Flood Zones 2 or 3 by the Environment Agency, particularly concerning the possibility of residential developments. This required analysis pertaining to drainage in the local area, visibility of the development from the surrounding area (and vice versa), and a suitability analysis for the placement of residences in the analysis site. </div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/Water_Responsives_Surface_Flooding.jpg" class="gallery-image">
+              <span class="image-caption" style="font-size: 12px;">This map highlights the area's relationship with flooding caused by surface water. Further analysis, such as the drainage analysis, helped to support this data.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/Water_Responsive_Historic_Flooding.jpg" class="gallery-image">
+              <span class="image-caption" style="font-size: 12px;">This map shows areas which historically have flooded in the area alongside the nearby watercourses, both above and below ground.</span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/Land_Preservation_Viewshed.jpg" class="gallery-image">
+              <span class="image-caption" style="font-size: 12px;">A viewshed analysis was conducted to investigate how visible certain landmarks of the surrounding area would be from the site, and how the site could be seen from listed buildings (used as a proxy for cultural landmarks and sites of interest in the surrounding area). To maximise insights gained from this, the visibility analysis comprised of three main factors: sightlines; visibility; and a raster layer highlighting the most visible features. This analysis highlighted that most of the sites were relatively visually inconspicuous, with the exception of a few, notably the south-eastern site and some central sites. </span>
+            </div>
+	    <div class="gallery-image-container">
+              <img src="../assets/images/Water_Responsive_Drainage.jpg" class="gallery-image">
+              <span class="image-caption" style="font-size: 12px;">A key part of this project was investigating the site's relationship with water and drainage. By sitting in a flood zone, it was clear that much of the site would be susceptible to fluvial flooding, but it was important to investigate how long this water may reside in these areas when a flood event occurs. I used the SAGA channel network & drainage basins tool in QGIS to identify drainage channels and strahler orders (the number of combined drainage channels) from a digital terrain model, which allowed me to visualise where water drained to. These sites had few drainage options, as shown by the low concentration of lines within the sites. I then overlayed this with the EU's Imperviousness Density (IMD) dataset which highlights permeability of the terrain. This showed that the sites generally had less permeable terrain, such as concrete or tarmac, contributing to flood duration and intensity.</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+<div id="footer">
+  <!-- Email Icon -->
+  <a class="icon-link" href="mailto:luca.armezzani16@gmail.com">
+    <img src="../assets/icons/mail.svg" class="footer-icon"/>
+  </a>
+
+  <!-- Phone Icon -->
+  <a class="icon-link" href="tel:+447585440250">
+    <img src="../assets/icons/phone.svg" class="footer-icon"/>
+  </a>
+</div>
+
+</html>

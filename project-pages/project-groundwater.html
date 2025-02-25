@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/luca.jpeg" />
+     <title>Luca Armezzani GIS Portfolio</title>
+    <meta name="description" content="Luca Armezzani GIS Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">PORTFOLIO</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:luca.armezzani16@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">GROUNDWATER FLOOD RESILIENCE</div>
+        <div class="body-text">This project focused on building a groundwater flood resilience framework from scratch for a local council in England. Several indicators were expressed and measured using spatial data, relying on careful yet detailed analysis to obtain accurate results.</div>
+        <image class="project-header-image" src="../assets/images/250131 ENV-CON-1 FLOOD RISK VEGETATION AND HABITAT HEALTH_page-0001.jpg">
+	<span class="image-caption" style="font-size: 12px;">Map showing the Normalised Difference Vegetation Index (NDVI) value for the study site in order to ascertain the quality of vegetation in the area.</span>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">PROJECT DETAILS</div>
+        <div class="project-details-content">
+          <div class="body-text">Several indicators were developed to measure and score the resilience of an area to groundwater flooding. For many of these indicators, such as those relating to the physical environment, some form of spatial analysis was required. Demographic data was calculated on a household level by distributing output area (OA) populations according to the volumes of residential buildings. This allowed me to assign each residence with a population estimate from which I could calculate pedestrian flows, using the buildings as origin points. For broader data, such as that at the census level, it was best to visualise this as a chloropleth map of the study area. In this project I utilised analysis methods such as travel time calculations, terrain analysis, and street network analysis. </div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/250129 RES-SOC-2 INCOME INEQUALITY & DEPRIVATION_page-0001.jpg" class="gallery-image">
+              <span class="image-caption" style="font-size: 12px;">Analysis of census data at the Output Area (OA) level to highlight levels of deprivation in the study area. This has been overlayed with local residences to give an insight into the spatial distribution of homes. The average value was calculated from the attribute table of the indicator's OA boundary layer.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/250131 SOC-CUL-2 FLOOD RISK ACCESSIBILITY TO COMMUNITY ASSETS_page-0001.jpg" class="gallery-image">
+              <span class="image-caption" style="font-size: 12px;">Analysis of travel times to community centres, calculated by extracting overlapping residences with the travel-time isochrones.</span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/250203_ENV-ECO-1_TOPOGRAPHY_page-0001.jpg" class="gallery-image">
+              <span class="image-caption" style="font-size: 12px;">Analysis of a digital terrain model (DTM) allowed me to identify properties within the lowest 25% of terrain. Calculated by converting the DTM to a vector from a raster, isolating the smallest 20% from the attribute table and then extracting any intersecting properties.</span>
+            </div>
+	    <div class="gallery-image-container">
+              <img src="../assets/images/osm.png" class="gallery-image">
+              <span class="image-caption" style="font-size: 12px;">This project involved as many as 9 seperate sites throughout the county. I built this QGIS model to automate the initial data querying from the OpenStreetMap database. This allowed me to gather data for each site far quicker than it would take to do each site manually. The model processes and filters the data to ensure only the features I needed would be returned with the desired symbology. I now utilise this model for all projects, and it is particularly useful for generating detailed context maps of prospective sites in a matter of minutes. Additionally, I have also been utilising python scripts to generate these maps when the data has been collected, to ensure even faster production of high quality maps. </span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+<div id="footer">
+  <!-- Email Icon -->
+  <a class="icon-link" href="mailto:luca.armezzani16@gmail.com">
+    <img src="../assets/icons/mail.svg" class="footer-icon"/>
+  </a>
+
+  <!-- Phone Icon -->
+  <a class="icon-link" href="tel:+447585440250">
+    <img src="../assets/icons/phone.svg" class="footer-icon"/>
+  </a>
+</div>
+
+</html>
