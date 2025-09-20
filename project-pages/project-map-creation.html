@@ -73,9 +73,9 @@
       <div id="project-details">
         <div class="subheader-text">PROJECT DETAILS</div>
         <div class="project-details-content">
-          <div class="body-text">Some projects at SeekOps involved processing data from up to 70 individual surveys – each one requiring its own data handling, styling, symbology, and a separate map output. This often demanded a full day’s effort from multiple analysts, even before factoring in any future data updates or report revisions.<br>
+          <div class="body-text">Some projects at SeekOps involved processing data from up to 70 individual surveys, each one requiring its own data handling, styling, symbology, and a separate map output. This often demanded a full day’s effort from multiple analysts, even before factoring in any future data updates or report revisions.<br>
 
-<br>Our surveys typically covered two main types of sites – offshore and onshore. Offshore sites were generally more straightforward, often focused on an entire facility and its flare. Onshore sites, however, were considerably more complex. They required the identification and labelling of various site components such as condensate tanks, compressors, and flares. This variation in site complexity directly influenced the types of data and layers used in reporting, and as such, the script needed to be flexible and robust enough to handle both scenarios.
+<br>Our surveys typically covered two main types of sites; offshore and onshore. Offshore sites were generally more straightforward, often focused on an entire facility and its flare. Onshore sites were considerably more complex. They required the identification and labelling of various site components such as condensate tanks, compressors, and flares. This variation in site complexity directly influenced the types of data and layers used in reporting, and as such, the script needed to be flexible and robust enough to handle both scenarios.
 
 <br>The Python script I developed condensed this entire mapping process into a matter of seconds. Users simply selected the relevant files and parameters, and the script would automatically generate detailed, report-ready outputs.
 <br>
@@ -83,7 +83,7 @@
 <br>
 <br>- Imported site boundaries, equipment groups, and survey shapefiles into the QGIS project, reprojecting them to the correct coordinate system and converting them to GeoJSONs for improved performance and reduced file size.
 <br>
-<br>- Symbology was applied automatically – equipment groups were highlighted appropriately for each survey, and survey layers were styled to visualise methane concentration levels.
+<br>- Symbology was applied automatically, equipment groups were highlighted appropriately for each survey, and survey layers were styled to visualise methane concentration levels.
 <br>
 <br>- Layers were then copied and categorised, allowing them to be individually edited later without having to recreate maps from scratch – a key benefit when dealing with revisions or client feedback.
 <br>
@@ -96,7 +96,7 @@
 <br>- Finally, the completed layout was exported as a PNG to an output folder, with each layout locked in place to support easy updates down the line.
 <br>
 <br>
-<br>The early versions of the script used a basic layout, reflecting the company’s existing map design – a simple setup with a colour bar to indicate minimum and maximum ppm values, and additional survey data presented throughout the report. While functional, this approach required analysts to enter the same values in multiple places – a time-consuming and error-prone task that the script was able to fully automate.
+<br>The early versions of the script used a basic layout, reflecting the company’s existing map design - a simple setup with a colour bar to indicate minimum and maximum ppm values, and additional survey data presented throughout the report. While functional, this approach required analysts to enter the same values in multiple places – a time-consuming and error-prone task that the script was able to fully automate.
 
 </div>
 
