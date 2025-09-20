@@ -52,9 +52,9 @@
         <div class="main-title">MAP CREATION SCRIPT</div>
         <div class="body-text">Not long after joining SeekOps, I spotted an opportunity to improve the company’s geospatial workflows by putting my QGIS skills to use. In quieter moments at work, I began building a Python script aimed at streamlining the entire process – from importing shapefiles to exporting consistent, high-quality maps ready for client reports.
 
-Alongside automating routine tasks, I focused on enhancing the overall quality of the outputs. This involved redesigning the map templates for clearer presentation and incorporating detailed 3D imagery into reports using CloudCompare. The 3D content was generated from drone-captured models and orthomosaic exports, offering clients more insightful and visually engaging deliverables.
+</div>Alongside automating routine tasks, I focused on enhancing the overall quality of the outputs. This involved redesigning the map templates for clearer presentation and incorporating detailed 3D imagery into reports using CloudCompare. The 3D content was generated from drone-captured models and orthomosaic exports, offering clients more insightful and visually engaging deliverables.
 
-After sharing the first version of the script, the response from management was very positive – they were keen to adopt it into regular workflows. I took the lead on rolling it out across the team, creating clear, user-friendly documentation and support materials, including Confluence guides and GitHub pages, to help colleagues get up to speed and make the most of the new tools.</div>
+</div>After sharing the first version of the script, the response from management was very positive – they were keen to adopt it into regular workflows. I took the lead on rolling it out across the team, creating clear, user-friendly documentation and support materials, including Confluence guides and GitHub pages, to help colleagues get up to speed and make the most of the new tools.</div>
         <image class="project-header-image" src="../assets/images/code snippet.png">
 	<span class="image-caption" style="font-size: 12px;">An extract from the script. The script was modified in VScode and was updated on Github with each iteration.</span>
 
@@ -70,27 +70,28 @@ After sharing the first version of the script, the response from management was 
         <div class="project-details-content">
           <div class="body-text">Some projects at SeekOps involved processing data from up to 70 individual surveys – each one requiring its own data handling, styling, symbology, and a separate map output. This often demanded a full day’s effort from multiple analysts, even before factoring in any future data updates or report revisions.
 
-Our surveys typically covered two main types of sites – offshore and onshore. Offshore sites were generally more straightforward, often focused on an entire facility and its flare. Onshore sites, however, were considerably more complex. They required the identification and labelling of various site components such as condensate tanks, compressors, and flares. This variation in site complexity directly influenced the types of data and layers used in reporting, and as such, the script needed to be flexible and robust enough to handle both scenarios.
+</div>Our surveys typically covered two main types of sites – offshore and onshore. Offshore sites were generally more straightforward, often focused on an entire facility and its flare. Onshore sites, however, were considerably more complex. They required the identification and labelling of various site components such as condensate tanks, compressors, and flares. This variation in site complexity directly influenced the types of data and layers used in reporting, and as such, the script needed to be flexible and robust enough to handle both scenarios.
 
-The Python script I developed condensed this entire mapping process into a matter of seconds. Users simply selected the relevant files and parameters, and the script would automatically generate detailed, report-ready outputs.
+</div>The Python script I developed condensed this entire mapping process into a matter of seconds. Users simply selected the relevant files and parameters, and the script would automatically generate detailed, report-ready outputs.
 
-Behind the scenes, the script carried out a full end-to-end process:
+</div>
+		</div>Behind the scenes, the script carried out a full end-to-end process:
 
-It imported site boundaries, equipment groups, and survey shapefiles into the QGIS project, reprojecting them to the correct coordinate system and converting them to GeoJSONs for improved performance and reduced file size.
+</div>- Imported site boundaries, equipment groups, and survey shapefiles into the QGIS project, reprojecting them to the correct coordinate system and converting them to GeoJSONs for improved performance and reduced file size.
 
-Symbology was applied automatically – equipment groups were highlighted appropriately for each survey, and survey layers were styled to visualise methane concentration levels.
+</div>- Symbology was applied automatically – equipment groups were highlighted appropriately for each survey, and survey layers were styled to visualise methane concentration levels.
 
-These layers were then copied and categorised, allowing them to be individually edited later without having to recreate maps from scratch – a key benefit when dealing with revisions or client feedback.
+</div>- Layers were then copied and categorised, allowing them to be individually edited later without having to recreate maps from scratch – a key benefit when dealing with revisions or client feedback.
 
-The QGIS layout was built from a predefined template, with map items, wind rose images, and labels all populated programmatically.
+</div>- A QGIS layout was built from a predefined template, with map items, wind rose images, and labels all populated programmatically.
 
-A table within the layout was filled with key survey information, automatically pulled from a separate spreadsheet.
+</div> - A table within the layout was filled with key survey information, automatically pulled from a separate spreadsheet.
 
-The map extent was adjusted to ensure a suitable zoom level for both the site and the relevant survey area.
+</div> - The map extent was adjusted to ensure a suitable zoom level for both the site and the relevant survey area.
 
-Finally, the completed layout was exported as a PNG to an output folder, with each layout locked in place to support easy updates down the line.
+</div> - Finally, the completed layout was exported as a PNG to an output folder, with each layout locked in place to support easy updates down the line.
 
-The early versions of the script used a basic layout, reflecting the company’s existing map design – a simple setup with a colour bar to indicate minimum and maximum ppm values, and additional survey data presented throughout the report. While functional, this approach required analysts to enter the same values in multiple places – a time-consuming and error-prone task that the script was able to fully automate.
+</div> The early versions of the script used a basic layout, reflecting the company’s existing map design – a simple setup with a colour bar to indicate minimum and maximum ppm values, and additional survey data presented throughout the report. While functional, this approach required analysts to enter the same values in multiple places – a time-consuming and error-prone task that the script was able to fully automate.
 
 </div>
 
